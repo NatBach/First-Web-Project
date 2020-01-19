@@ -1,0 +1,235 @@
+.workPlace {
+    margin-top: .3em;
+    width: 24em;
+    height: auto;
+}
+
+/* WHO ARE WE */
+#we {
+    color: white;
+    height: 97vh;
+    background-image: url('../../images/grass-3253361_1920.jpg');
+    background-size: cover;
+    border: 1px solid black;
+}
+
+.usWho {
+    color: white;
+    display: inline-block;
+}
+
+/* MAP */
+.tmaBuilding {
+    height: auto;
+    width: 175vh;
+    margin-top: .5em;
+
+    /* .mapouter{position:relative;text-align:right;height:500px;width:600px;} */
+    /* .gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;} */
+}
+
+/* .mapouter {
+    position:relative;
+    text-align:right;
+    height:500px;
+    width:600px;
+} */
+
+/* .gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:500px;
+    width:600px;
+} */
+
+/* OFFICE PICTURE */
+#donotmiss {
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 10px;
+    color: red;
+    text-align: center;
+    align-items: center;
+    margin-top: 1.5em;
+}
+
+.arrows {
+    height: 1.5em;
+    width: auto;
+    margin-top: 1.6em;
+}
+
+#note {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    display: flex;
+    color: white;
+    margin-left: 40%;
+}
+
+/* WHERE WE WORK FOR THE LIVING */
+.where {
+    margin-top: 2rem;
+    color: white;
+}
+
+.hotline {
+    margin-top: 2em;
+    color: orange;
+    background: white;
+    display: inline-block;
+}
+
+/* PICTURES */
+.tmaPhoto {
+    height: 92vh;
+    width: auto;
+    float: right;
+    margin-top: .7em;
+}
+
+.tmaSoccer {
+    width: 75vh;
+    height: auto;
+    float: left;
+    margin-left: 2em;
+    margin-top: .3rem;
+}
+
+.tma {
+    margin-top: 5em;
+    height: 50vh;
+    width: auto;
+    float: left;
+}
+
+/* BACKGROUND */
+.blackBack {
+    background-color: rgba(8, 8, 8, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    height: 305vh;
+    vertical-align: middle;
+}
+
+.dashboard {
+    position: relative;
+    background-image: url('../../images/tma-working.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 177vh;
+    height: 112vh;
+    transform: translateY(-40px);
+}
+
+.dark-background {
+    background-color: rgba(155, 155, 155, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    height: 112vh;
+}
+
+/* ICONS */
+.picture {
+    height: 5em;
+    width: auto;
+}
+
+.openSource {
+    width: 9em;
+    height: auto;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.caption {
+    display: block;
+    font-size: 1rem;
+    color: white;
+}
+
+/* GRID */
+div.grid-item-1 {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 1rem;
+    margin-top: 12em;
+    grid-gap: 30px 90px;
+}
+
+.grid-item-1 {
+    display: block;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1rem;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item-2 {
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item-3 {
+    background-position: center;
+    background-size: cover;
+    padding: 1rem;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item-4 {
+    background-size: 250px;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.grid-item-5 {
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1rem;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item-6 {
+    background-position: center;
+    background-size: 150%;
+    padding: 1rem;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*FONT*/
+.usWho, .where {
+    font-family: 'Amatic SC', cursive;
+}
+
+.usWho {
+    font-size: 2.7em;
+}
+
+.where {
+    font-size: 2.4em;
+}

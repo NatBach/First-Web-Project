@@ -1,0 +1,7 @@
+{
+	//"mongoURI": "mongodb+srv://ntnhan:1_Abc_123@sierrawireless-2ypgf.mongodb.net/test?retryWrites=true&w=majority",
+	"mongoURI": "mongodb+srv://ntnhan:1_Abc_123@sierrawireless-2ypgf.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "mysecrettoken",
+    "githubClientId": "15f498b97b02304d63ee",
+    "githubSecret": "8422a439e39057e355811a1215debbf4c1e276c8"
+}

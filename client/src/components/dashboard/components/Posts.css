@@ -1,0 +1,196 @@
+/* ------------------------------------ */
+
+/*//////////////////////////////////////////////////////////////////
+[ Table ]*/
+
+/* .limiter {
+  width: 900px;
+  margin: 0 auto;
+} */
+
+.limiter {
+  width: 45em;
+  margin-top: 32em;
+  display: inline-block;
+  opacity: .9;
+}
+
+.container-table100 {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 33px 30px;
+}
+
+.wrap-table100 {
+  width: 100%;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Table ]*/
+.table100 {
+  background-color: #fff;
+}
+
+table {
+  width: 100%;
+}
+
+th, td {
+  font-weight: unset;
+  padding-right: 14px;
+}
+
+.column1 {
+  width: 15%;
+  padding-left: 1.8rem;
+}
+
+.column2 {
+  width: 20%;
+}
+
+.column3 {
+  width: 20%;
+}
+
+.column4 {
+  width: 19%;
+}
+
+.column5 {
+  width: 13%;
+}
+
+.column6 {
+  width: 18%;
+  /* padding-right: 1.5rem; */
+}
+
+.table100-head th {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.table100-body td {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.table100-body .removeButton {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/*==================================================================
+[ Fix header ]*/
+.table100 {
+  position: relative;
+  padding-top: 60px;
+}
+
+.table100-head {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.table100-body {
+  max-height: 585px;
+  overflow: auto;
+}
+
+.table100.ver1 th {
+  font-family: Lato-Bold;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.4;
+
+  background-color: #6c7ae0;
+}
+
+.table100.ver1 td {
+  font-family: Lato-Regular;
+  font-size: 15px;
+  color: #808080;
+  line-height: 1.4;
+}
+
+.table100.ver1 .table100-body tr:nth-child(even) {
+  background-color: #f8f6ff;
+}
+
+.table100.ver1 {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.input-group{
+  width: 30%;
+  margin-left: 1rem;
+  margin-top: 25px;
+}
+
+.form-control{
+  height: calc(1.5em + 0.75rem + -4px)
+}
+
+.btn {
+  margin-right: 2.1rem;
+}
+
+.removeButton {
+  background-image: url("https://image.flaticon.com/icons/png/512/43/43165.png");
+  background-size: 15%;
+  /* display: inline-block; */
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 14%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.removeButton:hover {
+  background-image: url("https://image.flaticon.com/icons/png/512/107/107668.png");
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 14%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.addButton {
+  margin-top: 20px;
+  background-color: rgba(151, 172, 177, 0.9);
+  border: 1px solid rgb(102, 224, 255);
+  border-radius: 10px;
+  width: 55px;
+  height: 30px;
+  margin-right: 1rem;
+}
+
+.addButton:hover {
+  color: rgb(0, 255, 0);
+}
+
+.addButton {
+  color: white;
+}
+
+.Posts {
+  background: blue;
+}

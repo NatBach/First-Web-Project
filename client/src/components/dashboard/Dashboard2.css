@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pagination {
+  margin-bottom: 20em;
+}
+
+/* .container form-layout {
+  background-image: url("https://static.photocdn.pt/images/articles/2017_8/iStock-645869758.jpg");
+} */
+
+.infoBoard {
+  /* background-image: url('../../images/HueOverpass-DaNang.jpg'); */
+  background-image: url('../../images/NgaBaHueOverpass.jpg');
+  height: 210vh;
+  /* width: auto; */
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  width: 74em;
+  margin-top: -27em;
+  background-position: center;
+}
+
+.cell100, .row100 {
+  opacity: 1;
+}

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+	box-sizing: border-box;
+}
+
+.Spinner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh;
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+}
+
+.loading {
+	animation: rotate 3s linear infinite;
+	height: 50px;
+	transform-origin: bottom center;
+	margin-top: -10rem;
+}
+
+@keyframes rotate {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.Spinner .circle {
+	animation: grow 1.5s linear infinite;
+	background-color: purple;
+	border-radius: 50%;
+	display: inline-block;
+	margin: -10px;
+	height: 40px;
+	width: 40px;
+	transform: scale(0);
+}
+
+.Spinner .circle:nth-of-type(2) {
+	animation-delay: .75s;
+	background-color: palevioletred;
+}
+
+@keyframes grow {
+	50% {
+		transform: scale(1);
+	}
+}

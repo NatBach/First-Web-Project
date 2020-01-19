@@ -1,0 +1,826 @@
+:root {
+  /* Color for the font */
+  --primary-color: #17a2b8;
+  --light-color: #fff;
+  --dark-color: #343a40;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+  --background-color: #f6f5f7;
+  --background-light-color: #eee;
+}
+
+/* Reset style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position:relative;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  height: 100vh;
+  /* background-position: center center;
+  /* background-size: cover; */
+  background: var(--background-color);
+  /* background: url("https://static.photocdn.pt/images/articles/2017_8/iStock-645869758.jpg") center no-repeat; */
+  /* background: url("https://live.staticflickr.com/2914/13498954443_340878364f_o.jpg") center; */
+  background: url("https://live.staticflickr.com/3931/15362715267_1298cd8c65_o.jpg") no-repeat;
+  background-size: cover;
+}
+
+
+/* Main style */
+.container {
+  /* background: url("https://live.staticflickr.com/3931/15362715267_1298cd8c65_o.jpg") no-repeat;
+  background-size: cover; */
+  height: 100%;
+  /* overflow: auto; */
+  display: flex;
+  padding: 1rem 2rem;
+  transform: translateY(9%);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -50px;
+}
+
+/* Text Styles*/
+.x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.large {
+  font-size: 2rem;
+  line-height: .5;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+
+/* Padding */
+.p-n {
+  padding: 0.5rem;
+}
+.p-n-1 {
+  padding: 1rem;
+}
+.p-n-2 {
+  padding: 2rem;
+}
+.p-n-3 {
+  padding: 3rem;
+}
+.py-n {
+  padding: 0.5rem 0;
+}
+.py-n-1 {
+  padding: 1rem 0;
+}
+.py-n-2 {
+  padding: 2rem 0;
+}
+.py-n-3 {
+  padding: 3rem 0;
+}
+
+/* Margin */
+.m-n {
+  margin: 0.5rem;
+}
+.m-n-1 {
+  margin: 1rem;
+}
+.m-n-2 {
+  margin: 2rem;
+}
+.m-n-3 {
+  margin: 3rem;
+}
+.my-n {
+  margin: 0.5rem 0;
+}
+.my-n-1 {
+  margin: 1rem 0;
+}
+.my-n-2 {
+  margin: 2rem 0;
+  margin-top: 20px;
+}
+.my-n-3 {
+  margin: 3rem 0;
+}
+.my-n-l-0{
+  margin-left: 0;
+}
+
+.alert {
+  /* padding: .5rem; */
+  /* margin: .5rem 0; */
+  margin-top: 2rem;
+  opacity: 0.9;
+  background: var(--light-color);
+  color: #333;
+  border-radius: 12px;
+}
+
+/* Utility classes and element */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-size: 18;
+  font-weight: 320;
+  text-align: center;
+  margin-top: 2rem 0;
+  border: 1px solid rgba(64,224,208, .8);
+  border-radius: 20px;
+  color: white;
+  background: rgba(64,224,208, .8);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style for the button element */
+.btn {
+  cursor: pointer;
+  color: #000;
+  display: inline-block;
+  font-size: 0.9rem;
+  border: none;
+  padding: 0.4rem 1.3rem;
+  transition: opacity 0.2s ease-in;
+  border-radius: 20px;
+}
+
+.btn-primary,
+.bg-primary,
+.badge-primary,
+.alert-primary {
+  /* background: var(--primary-color); */
+  background: rgb(0,191,255);
+  color: white;
+  /* border-radius: 20px; */
+  margin: 0 15px;
+}
+
+.btn-light,
+.bg-light,
+.badge-light,
+.alert-light {
+  background: var(--light-color);
+  color: #333;
+}
+
+.btn-dark,
+.bg-dark,
+.badge-dark,
+.alert-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.btn-blue,
+.bg-blue,
+.badge-blue,
+.alert-blue {
+  background: #330000;
+  color: #fff;
+}
+
+.btn-danger,
+.bg-danger,
+.badge-danger,
+.alert-danger {
+  background: var(--danger-color);
+  color: #fff;
+}
+
+.btn-success,
+.bg-success,
+.badge-success,
+.alert-success {
+  background: var(--success-color);
+  color: #fff;
+}
+
+.btn-white,
+.bg-white,
+.badge-white,
+.alert-white {
+  background: #fff;
+  color: #333;
+  border: #ccc solid 1px;
+}
+
+.btn, .signupButton:hover {
+  opacity: 0.8;
+  /* background: -webkit-linear-gradient(right,#5758BB, rgb(63, 64, 148)); */
+}
+
+.bg-light,
+.badge-light {
+  border: #ccc solid 1px;
+}
+
+.bg-custom {
+  /* background: rgba(218, 165, 32, .8); */
+  /* background: rgba(6, 87, 150, 0.7); */
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.sierraLogo {
+  /* background-image: url("../src/images/sierraLogo.png"); */
+  background-image: url("../src/images/logo_compliance-3-.png");
+  /* background-size: 100px; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 8em;
+}
+
+.navbar-n .sierraLogo {
+  padding-right: 7.3em;
+  padding-bottom: 0.8em;
+}
+
+.bg-radient {
+  background: linear-gradient(right,#4299a7, #409dac);
+  background: -webkit-linear-gradient(right,#4299a7, #409dac);
+}
+
+/* .bg-radient:hover {
+  background:#409dac;
+} */
+
+/* Style for the form element */
+.form {
+  background-color: #fff;
+  padding: 1rem 1.4rem;
+  border-radius: .6rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.form-sign-in {
+  transform: translate(0, 2%);
+  margin-bottom: .7rem;
+  margin-top: 10rem;
+  box-shadow: 10px 10px 5px rgba(255, 255, 255, 0.8);
+}
+
+.login {
+  /* transform: translate(0, 2%); */
+  /* margin-bottom: .7rem; */
+  /* margin-top: 10rem; */
+  /* box-shadow: 10px 10px 5px rgba(255, 255, 255, 0.8); */
+
+  /* margin: 2rem 0; */
+  /* margin-top: 110px; */
+
+  background-color: rgb(231, 60, 50);
+  color: white;
+  padding: .5rem 1rem;
+  /* border-radius: 1rem; */
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  /* border-radius: 10px; */
+  outline: none;
+}
+
+.form-register {
+  transform: translate(0, -12%);
+  margin-bottom: -2.3rem;
+  margin-top: 9rem;
+  box-shadow: 10px 10px 5px rgba(255, 255, 255, 0.8);
+}
+
+.register {
+  /* transform: translate(0, 2%); */
+  /* margin-bottom: .7rem; */
+  /* margin-top: 10rem; */
+  /* box-shadow: 10px 10px 5px rgba(255, 255, 255, 0.8); */
+
+  margin: 1rem 0;
+  /* margin-top: 110px; */
+
+  color: white;
+  background-color: rgb(231, 60, 50);
+  padding: .5rem 1rem;
+  border-radius: .4rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  /* border-radius: 20px; */
+  outline: none;
+}
+
+.Register input[type='name'], 
+.Register input[type='email'],
+.Register input[type='password'],
+.Register input[type='submit'] {
+  border-radius: .2rem;
+}
+
+.form .form-group {
+  margin: .75rem 0;
+}
+
+/* Style for the input element */
+.form input[type='text'],
+.form input[type='email'],
+.form input[type='password'],
+.form input[type='date'],
+.form select,
+.form textarea {
+  /* background-color: var(--background-light-color); */
+  display: block;
+  border: none;
+  border-bottom: 1px solid black;
+	padding: 0.7rem 0.9rem;
+  /* border-radius: 0.5rem; */
+  width: 100%;
+  font-size: inherit;
+  opacity: .6;
+  outline: none;
+}
+
+.form input[type='submit'],
+button {
+  font: inherit;
+}
+
+.form-image {
+  width: 200px;
+  height: 100px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+
+/* Style for the sign-in classes */
+.sign-in {
+  width: 100%;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.sign-in input[type='submit'] {
+  border-radius: .4rem;
+}
+
+.sign-in span {
+  font-size: .9rem;
+  margin-left: 1.5rem;
+}
+
+/* Style for the sign-up classes */
+.sign-up {
+  font-size: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.round-img {
+  border-radius: 50%;
+}
+
+.line {
+  height: 1px;
+  background: #ccc;
+  margin: 1.5rem 0;
+}
+
+/* Overlay */
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+  text-align: left;
+}
+
+.table th {
+  background: var(--light-color);
+}
+
+/* Navbar */
+
+.navbar-n a {
+  color: rgba(255, 255, 255, 1);
+  padding: 0.45rem;
+  margin: 0 0.35rem;
+  opacity: 1;
+}
+
+.navbar-n {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .8rem 1rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  /* border-bottom: solid 1px var(--primary-color); */
+  /* border-bottom: 1px solid rgba(218, 165, 32, .8); */
+  /* border-bottom: 1px solid rgba(0, 0, 0, .4); */
+  opacity: 1;
+  margin-bottom: 50px;
+}
+
+.navbar-n ul {
+  display: flex;
+}
+
+.navbar-n a:hover {
+  color: var(--primary-color);
+}
+
+.navbar-n .welcome span {
+  margin-right: 0.6rem;
+}
+
+/* Landing Page */
+.landing {
+  position: relative;
+  background: url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fsource.sierrawireless.com%2F~%2Fmedia%2Fdeveloper%2520zone%2Fnews%2Feuairtraffic.jpg.ashx%3Fla%3Den&f=1');
+  /* background: url('https://www.enel.com/content/enel-com/en/megamenu/media/news/2018/11/report-world-energy-outlook-presentation-london/_jcr_content/carousel/items/image.img.jpg/1542187848885.jpg'); */
+  height: 100vh;
+  background-size: cover;
+}
+
+.landing-inner {
+  color: #fff;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Profiles Page */
+.profile {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  align-items: center;
+  grid-gap: 2rem;
+  padding: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.editProfile {
+  background-color: #fff;
+  padding: 1rem 1.4rem;
+  /* border-radius: .6rem; */
+  text-align: center;
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+/* Profile Page */
+.profile-grid {
+  display: grid;
+  grid-template-areas:
+    'top top'
+    'about about'
+    'exp edu'
+    'github github';
+  grid-gap: 1rem;
+}
+
+.profile-top {
+  grid-area: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-top img {
+  width: 250px;
+}
+
+.profile-top .icons a {
+  color: #fff;
+  margin: 0 0.3rem;
+}
+
+.profile-top .icons a:hover {
+  color: var(--dark-color);
+}
+
+.profile-about {
+  grid-area: about;
+  text-align: center;
+}
+
+.profile-about .skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-exp {
+  grid-area: exp;
+}
+
+.profile-edu {
+  grid-area: edu;
+}
+
+.profile-exp h2,
+.profile-edu h2 {
+  margin-bottom: 1rem;
+}
+
+.profile-exp > div,
+.profile-edu > div {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: #ccc 1px dotted;
+}
+
+.profile-exp > div:last-child,
+.profile-edu > div:last-child {
+  border: 0;
+}
+
+.profile-exp p,
+.profile-edu p {
+  margin: 0.5rem 0;
+}
+
+.profile-github {
+  grid-area: github;
+}
+
+.profile-github .repo {
+  display: flex;
+}
+
+.profile-github .repo > div:first-child {
+  flex: 7;
+  flex-basis: 70%;
+}
+
+.profile-github > div:last-child {
+  flex: 3;
+  flex-basis: 20%;
+}
+
+/* Posts Page */
+.post-form .post-form-header {
+  background: var(--primary-color);
+  padding: 0.5rem;
+}
+
+.post {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 2rem;
+  align-items: center;
+}
+
+.post > div:first-child {
+  text-align: center;
+}
+
+.post img {
+  width: 100px;
+}
+
+.post .comment-count {
+  background: var(--light-color);
+  color: var(--primary-color);
+  padding: 0.1rem 0.2rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.post .post-date {
+  color: #aaa;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Mobile Styles */
+@media (max-width: 700px) {
+  .container {
+    margin-top: 9rem;
+  }
+
+  .hide-sm {
+    display: none;
+  }
+
+  /* Text Styles */
+  .x-large {
+    font-size: 3rem;
+  }
+
+  .large {
+    font-size: 2rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  /* Navbar */
+  .navbar-n {
+    display: block;
+    text-align: center;
+  }
+
+  .navbar-n ul {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .navbar-n h1 {
+    margin-bottom: 1rem;
+  }
+
+  .navbar-n .welcome {
+    display: none;
+  }
+
+  /* .navBar:hover {
+    border-radius: 20px;
+    border: 1px solid white;
+  } */
+
+  /* Profiles Page */
+  .profile {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .profile ul {
+    display: none;
+  }
+
+  /* Profile Page */
+
+  .profile-top img,
+  .profile img {
+    width: 200px;
+    margin: auto;
+  }
+
+  .profile-grid {
+    grid-template-areas:
+      'top'
+      'about'
+      'exp'
+      'edu'
+      'github';
+  }
+
+  .profile-about .skills {
+    flex-direction: column;
+  }
+
+  .dash-buttons a {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.2rem;
+  }
+
+  .post {
+    grid-template-columns: 1fr;
+  }
+  .post a,
+  .post button {
+    padding: 0.3rem 0.4rem;
+  }
+}
+
+.signupButton {
+  margin-right: 10px;
+  border-radius: 20px;
+  padding: 5px;
+  /* background: var(--light-color); */
+  color: #333;
+  font-size: 0.9rem;
+  border: none;
+  padding: 0.5rem 1.3rem;
+  transition: opacity 0.2s ease-in;
+  /* border-radius: 20px; */
+  background: rgb(0,191,255);
+  color: white;
+  border-radius: 20px;
+  /* margin-right: -10px; */
+}
+
+.signUp {
+  border-bottom: 1em;
+  background: blue;
+  color: white;
+  padding: .5em 4.5em;
+  /* width: 100%; */
+  box-sizing: border-box;
+  border-radius: 10px;
+  /* margin: 0em .5em; */
+}
+
+.createModule {
+  color: white;
+  margin: 2rem 0;
+  margin-top: 10%;
+}
+
+.createYourModule {
+  background-color: #fff;
+  padding: 30em 18em;
+  border-radius: .6rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+
+  background-image: url('../src/images/NgaBaHueOverpass.jpg');
+  height: 210vh;
+  background-size: cover;
+  width: 74em;
+  margin-top: -27em;
+  background-position: center;
+}
+
+/* .Dashboard {
+  background-image: url('');
+} */
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+.languages {
+  color: orange;
+  margin-right: 2.1em;
+}

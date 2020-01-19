@@ -1,0 +1,18 @@
+th {
+  background:  blue;
+  color: white;
+  text-align: center;
+}
+
+td {
+  text-align: center;
+}
+
+td:hover {
+  background: gray;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
